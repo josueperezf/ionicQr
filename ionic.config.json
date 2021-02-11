@@ -1,5 +1,7 @@
 {
   "name": "ionicQr",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

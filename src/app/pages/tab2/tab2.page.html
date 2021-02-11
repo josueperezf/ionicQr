@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      Historial
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="enviarCorreo()" color="primary">
+        <ion-icon slot="icon-only" name="send"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <!-- detail es para que al final de la fila le coloque el icono de una fecha para darle a entender que se puede presionar o algo asi -->
+    <ion-item detail *ngFor="let registro of dataLocalService.escaneados" (click)="abrirRegistro(registro)">
+      <ion-icon slot="start" name="globe" color="primary" ></ion-icon>
+      <ion-label>
+        <h2>{{registro.text}} </h2>
+        <!-- date es un pipe integrado de angular-->
+        <p>{{registro.created | date: 'medium'}} </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

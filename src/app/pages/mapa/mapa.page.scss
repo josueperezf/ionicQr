@@ -1,0 +1,15 @@
+#map{
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #f6f6f4;
+  position: absolute !important; top: 0 !important; bottom: 0 !important;
+}
+body { margin: 0; padding: 0; }
+// 	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+.boton-regresar {
+  position: fixed;
+  top: 40px;
+  right: 12px;
+  font-size: 23px !important;
+}
